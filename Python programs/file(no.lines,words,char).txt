@@ -1,0 +1,14 @@
+f1=open("new.txt","r")
+l=0
+w=0
+c=0
+
+for i in f1:
+    line=i.strip("\n")
+    print(line)
+    word=line.split()
+    print(word)
+    l+=1
+    w+=len(word)
+    c+=len(line)
+print(l,w,c)

@@ -1,0 +1,16 @@
+//getting input in vijay:100:100:100
+                   velan:100:100:100
+                  vikram:100:100:100
+and printing whose total is maximum//
+
+
+
+
+n=int(input())
+l=[]
+for i in range(n):
+    name,maths,physics,chemistry=map(str,input().split(":"))
+    total=int(maths)+int(physics)+int(chemistry)
+    l.append([total,int(maths),int(physics),int(chemistry),name])
+l.sort()
+print(l[len(l)-1][-1])
